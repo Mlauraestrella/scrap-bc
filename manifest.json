@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "María Laura Scraping",
+    "version": "1.0",
+    "description": "Get Information from contact profiles",
+    "content_scripts": [
+      {
+        "matches": ["https://*.linkedin.com/*"],
+        "js": ["./Scrap/comands.js"]
+      }
+    ],
+    "action": {
+        "default_popup": "App/index.html"
+      },
+    "permissions": ["activeTab", "scripting"]
+}
